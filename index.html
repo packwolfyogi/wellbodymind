@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellBodyMind — Yoga for Wellness in Dryden</title>
+    <meta name="description" content="WellBodyMind offers yoga and qigong classes in Dryden, NY. Strengthen body, refine breath, cultivate clarity with instructor Brian Winters at the Dryden Community Center.">
+    <meta property="og:title" content="WellBodyMind — Yoga for Wellness in Dryden">
+    <meta property="og:description" content="Yoga and qigong classes at the Dryden Community Center. Sundays, Tuesdays & Thursdays at 8am. Private sessions available.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.wellbodymind.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__brand">
+                <img src="wbm-logo-2.avif" alt="WellBodyMind" class="nav__logo">
+            </a>
+            <nav class="nav__links" id="navLinks" aria-label="Main navigation">
+                <a href="#hero" class="nav__link">Home</a>
+                <a href="#welcome" class="nav__link">Welcome</a>
+                <a href="#classes" class="nav__link">Classes</a>
+                <a href="#about" class="nav__link">About</a>
+                <a href="#testimonials" class="nav__link">Testimonials</a>
+                <a href="#contact" class="nav__link">Contact</a>
+            </nav>
+            <button class="nav__hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="assets/images/hero-sm-group-yoga-on-mats.avif" alt="" class="hero__bg-img">
+        </div>
+        <div class="hero__overlay"></div>
+
+        <!-- Sacred geometry — fills entire hero -->
+        <svg class="hero__geometry" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+                <filter id="glow-purple" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="4" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+                <filter id="glow-sage" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="3.5" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+            </defs>
+            <!-- Outer rings -->
+            <circle class="geo geo--1" cx="300" cy="300" r="290" fill="none" stroke="rgba(123,94,167,0.2)" stroke-width="1.25" filter="url(#glow-purple)"/>
+            <circle class="geo geo--2" cx="300" cy="300" r="255" fill="none" stroke="rgba(143,168,136,0.18)" stroke-width="1.25" filter="url(#glow-sage)"/>
+            <circle class="geo geo--3" cx="300" cy="300" r="220" fill="none" stroke="rgba(107,78,139,0.15)" stroke-width="1" filter="url(#glow-purple)"/>
+            <!-- Flower of life petals -->
+            <circle class="geo geo--petal" cx="300" cy="180" r="120" fill="none" stroke="rgba(123,94,167,0.14)" stroke-width="1" filter="url(#glow-purple)"/>
+            <circle class="geo geo--petal" cx="404" cy="240" r="120" fill="none" stroke="rgba(143,168,136,0.12)" stroke-width="1" filter="url(#glow-sage)"/>
+            <circle class="geo geo--petal" cx="404" cy="360" r="120" fill="none" stroke="rgba(123,94,167,0.14)" stroke-width="1" filter="url(#glow-purple)"/>
+            <circle class="geo geo--petal" cx="300" cy="420" r="120" fill="none" stroke="rgba(143,168,136,0.12)" stroke-width="1" filter="url(#glow-sage)"/>
+            <circle class="geo geo--petal" cx="196" cy="360" r="120" fill="none" stroke="rgba(123,94,167,0.14)" stroke-width="1" filter="url(#glow-purple)"/>
+            <circle class="geo geo--petal" cx="196" cy="240" r="120" fill="none" stroke="rgba(143,168,136,0.12)" stroke-width="1" filter="url(#glow-sage)"/>
+            <!-- Star triangles -->
+            <polygon class="geo geo--tri" points="300,100 475,405 125,405" fill="none" stroke="rgba(107,78,139,0.12)" stroke-width="1" stroke-linejoin="round" filter="url(#glow-purple)"/>
+            <polygon class="geo geo--tri" points="300,500 475,195 125,195" fill="none" stroke="rgba(143,168,136,0.1)" stroke-width="1" stroke-linejoin="round" filter="url(#glow-sage)"/>
+        </svg>
+
+        <div class="hero__content">
+            <p class="hero__label" data-animate="fade-up">Yoga for Wellness in Dryden</p>
+            <h1 class="sr-only">WellBodyMind — Yoga for Wellness in Dryden</h1>
+            <img src="wbm-logo-2.avif" alt="WellBodyMind" class="hero__logo" data-animate="fade-up" data-delay="1">
+            <p class="hero__subtitle" data-animate="fade-up" data-delay="2">Strengthen body. Refine breath. Cultivate clarity.</p>
+            <a href="#classes" class="btn btn--primary" data-animate="fade-up" data-delay="3">Explore Classes</a>
+        </div>
+
+        <!-- Curved divider -->
+        <div class="section-curve section-curve--hero">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="var(--color-cream)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome section" id="welcome">
+        <div class="container welcome__grid">
+            <div class="welcome__image-wrap" data-animate="fade-up">
+                <div class="welcome__image-ring"></div>
+                <div class="welcome__image">
+                    <img src="assets/images/woman-sitting.jpg" alt="Yoga meditation practice" class="welcome__img">
+                </div>
+            </div>
+            <div class="welcome__text" data-animate="slide-left">
+                <p class="section__label">Welcome</p>
+                <h2 class="section__heading">Discover Our Philosophy</h2>
+                <p>At WellBodyMind, yoga is practiced as a steady path — focused on strengthening the body, refining the breath, and cultivating clarity of mind. Every class is an invitation to arrive exactly as you are.</p>
+                <p>Our classes emphasize repetition, intentional guidance, and music to support your movement rhythm. Whether you're stepping onto the mat for the first time or deepening a lifelong practice, you'll find a supportive, empowering, and welcoming environment.</p>
+                <a href="#about" class="link-arrow">Learn more about our approach <span aria-hidden="true">→</span></a>
+            </div>
+        </div>
+
+        <!-- Decorative dot pattern -->
+        <div class="welcome__dots" aria-hidden="true"></div>
+    </section>
+
+    <!-- Classes Section -->
+    <section class="classes section section--white" id="classes">
+        <!-- Curved top divider -->
+        <div class="section-curve section-curve--top">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,80 C480,0 960,80 1440,20 L1440,0 L0,0 Z" fill="var(--color-cream)"/>
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="section__header" data-animate="fade-up">
+                <div class="section__accent"></div>
+                <h2 class="section__heading">Yoga Classes</h2>
+                <p class="section__subheading">Move with intention. Build strength with grace.</p>
+            </div>
+
+            <div class="classes__grid">
+                <!-- Group Class Card -->
+                <div class="class-card" data-animate="fade-up" data-delay="1">
+                    <div class="class-card__header class-card__header--warm">
+                        <div class="class-card__image">
+                            <img src="assets/images/duo-prayer-salutation.avif" alt="Group yoga class" class="class-card__img">
+                        </div>
+                        <h3 class="class-card__title">Sunrise Yoga</h3>
+                        <p class="class-card__subtitle">Radiant Vinyasa Flow</p>
+                    </div>
+                    <div class="class-card__body">
+                        <p class="class-card__description">A steady, strength-building Vinyasa Flow designed to awaken your body and center your mind. Move through intentional sequences guided by breath and rhythm.</p>
+                        <ul class="class-card__details">
+                            <li>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                Sundays, Tuesdays &amp; Thursdays
+                            </li>
+                            <li>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                8:00 AM
+                            </li>
+                            <li>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Dryden Community Center
+                            </li>
+                        </ul>
+                        <div class="class-card__tags">
+                            <span class="tag tag--price">$15 – $18 drop-in</span>
+                            <span class="tag tag--highlight">Starting April 14</span>
+                        </div>
+                        <a href="#contact" class="btn btn--primary btn--full">Join a Class</a>
+                    </div>
+                </div>
+
+                <!-- Private Sessions Card -->
+                <div class="class-card" data-animate="fade-up" data-delay="2">
+                    <div class="class-card__header class-card__header--sand">
+                        <div class="class-card__image">
+                            <img src="assets/images/man-prayer-salutation.avif" alt="Private yoga session" class="class-card__img">
+                        </div>
+                        <h3 class="class-card__title">Private Sessions</h3>
+                        <p class="class-card__subtitle">Personalized Instruction</p>
+                    </div>
+                    <div class="class-card__body">
+                        <p class="class-card__description">One-on-one sessions tailored to your goals, experience, and schedule. Whether you're working through an injury, building a home practice, or seeking deeper understanding — this is your time.</p>
+                        <ul class="class-card__details">
+                            <li>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                1-hour sessions
+                            </li>
+                            <li>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                Tailored to your practice
+                            </li>
+                        </ul>
+                        <div class="class-card__tags">
+                            <span class="tag tag--highlight">By Appointment</span>
+                        </div>
+                        <a href="#contact" class="btn btn--secondary btn--full">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative circle -->
+        <div class="classes__circle" aria-hidden="true"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section section--sand" id="about">
+        <div class="container">
+            <div class="about__frame" data-animate="scale-in">
+                <div class="about__grid">
+                    <div class="about__text">
+                        <p class="section__label">Our Vision</p>
+                        <h2 class="section__heading">A Steady Path</h2>
+                        <p>WellBodyMind was founded on the belief that yoga is not about perfection — it's about presence. Every practice is an opportunity to meet yourself where you are, to move with intention, and to leave feeling more grounded than when you arrived.</p>
+                        <blockquote class="about__quote">
+                            "The body is your temple. Keep it pure and clean for the soul to reside in."
+                        </blockquote>
+                        <p>Our approach integrates traditional yoga philosophy with accessible, strength-building sequences. Classes are designed to challenge and support practitioners of all levels in a welcoming, judgment-free space.</p>
+                        <div class="about__instructor">
+                            <p class="about__instructor-name">Brian Winters</p>
+                            <p class="about__instructor-title">Yoga &amp; Qigong Instructor · Certified by Yoga Farm</p>
+                        </div>
+                    </div>
+                    <div class="about__image">
+                        <div class="about__image-inner">
+                            <img src="assets/images/woman-bow-pose.jpg" alt="Yoga warrior pose" class="about__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+        <!-- Curved top -->
+        <div class="section-curve section-curve--top">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,0 C480,80 960,0 1440,60 L1440,0 L0,0 Z" fill="var(--color-thistle)"/>
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="section__header" data-animate="fade-up">
+                <div class="section__accent"></div>
+                <h2 class="section__heading">What Our Students Say</h2>
+            </div>
+
+            <div class="testimonials__carousel" id="testimonialCarousel">
+                <div class="testimonial-card" data-animate="fade-up" data-delay="1">
+                    <div class="testimonial-card__quote" aria-hidden="true">"</div>
+                    <p class="testimonial-card__text">Brian's classes are the highlight of my week. His guidance is clear, intentional, and always meets you where you are. I've never felt more welcome in a yoga space.</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">S</div>
+                        <p class="testimonial-card__name">Sarah M.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate="fade-up" data-delay="2">
+                    <div class="testimonial-card__quote" aria-hidden="true">"</div>
+                    <p class="testimonial-card__text">I came to WellBodyMind as a complete beginner and quickly found my footing. The emphasis on breath and repetition made me feel capable from day one. Truly transformative.</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">J</div>
+                        <p class="testimonial-card__name">James R.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate="fade-up" data-delay="3">
+                    <div class="testimonial-card__quote" aria-hidden="true">"</div>
+                    <p class="testimonial-card__text">The private sessions helped me work through a shoulder injury safely. Brian's knowledge of anatomy and his patient, personalized approach made all the difference in my recovery.</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">L</div>
+                        <p class="testimonial-card__name">Linda K.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate="fade-up" data-delay="4">
+                    <div class="testimonial-card__quote" aria-hidden="true">"</div>
+                    <p class="testimonial-card__text">What sets Brian apart is the way he weaves philosophy into practice without it feeling heavy. You leave class feeling both stronger and more at peace. Can't recommend enough.</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">D</div>
+                        <p class="testimonial-card__name">David T.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials__nav">
+                <button class="testimonials__arrow testimonials__arrow--left" aria-label="Previous testimonial">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <div class="testimonials__dots" id="testimonialDots"></div>
+                <button class="testimonials__arrow testimonials__arrow--right" aria-label="Next testimonial">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section section--dark" id="contact">
+        <!-- Curved top -->
+        <div class="section-curve section-curve--top section-curve--dark">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,80 C360,0 1080,80 1440,20 L1440,0 L0,0 Z" fill="var(--color-cream)"/>
+            </svg>
+        </div>
+
+        <div class="container contact__grid">
+            <div class="contact__info" data-animate="fade-up">
+                <h2 class="section__heading section__heading--light">Connect with Us</h2>
+                <p class="contact__text">Ready to begin your practice? Have questions about classes or private sessions? We'd love to hear from you.</p>
+
+                <div class="contact__details">
+                    <div class="contact__detail">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <a href="mailto:wellbodymindyoga@gmail.com">wellbodymindyoga@gmail.com</a>
+                    </div>
+                    <div class="contact__detail">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Dryden Community Center<br>Dryden, NY</span>
+                    </div>
+                </div>
+
+                <div class="contact__social">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.46V13a8.28 8.28 0 005.58 2.17V11.7a4.85 4.85 0 01-3.58-1.43V6.69h3.58z"/></svg>
+                    </a>
+                </div>
+
+                <!-- Logo in contact section -->
+                <img src="wbm-logo-2.avif" alt="WellBodyMind" class="contact__logo">
+            </div>
+
+            <div class="contact__form-wrap" data-animate="fade-up" data-delay="1">
+                <form class="contact__form" id="contactForm" action="https://formspree.io/f/wellbodymindyoga@gmail.com" method="POST">
+                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                    <input type="hidden" name="_subject" value="New inquiry from WellBodyMind website">
+
+                    <div class="form-group">
+                        <input type="text" id="formName" name="name" required placeholder=" ">
+                        <label for="formName">Your Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="formEmail" name="email" required placeholder=" ">
+                        <label for="formEmail">Email Address</label>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="formSubject" name="subject" required>
+                            <option value="" disabled selected>Subject</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Class Information">Class Information</option>
+                            <option value="Private Session">Private Session</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <label for="formSubject">Subject</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="formMessage" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="formMessage">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                </form>
+
+                <div class="contact__success" id="contactSuccess" hidden>
+                    <div class="contact__success-inner">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="contact__success-icon"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <h3>Thank You</h3>
+                        <p>Your message has been sent. We'll be in touch soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__curve">
+            <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,60 C480,0 960,60 1440,20 L1440,60 L0,60 Z" fill="var(--color-deep-purple)"/>
+            </svg>
+        </div>
+        <div class="footer__inner">
+            <div class="container footer__grid">
+                <div class="footer__brand">
+                    <img src="wbm-logo-2.avif" alt="WellBodyMind" class="footer__logo">
+                    <p class="footer__tagline">Yoga for Wellness in Dryden</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <a href="#classes">Classes</a>
+                    <a href="#about">About</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer__legal">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+            <div class="container footer__bottom">
+                <p>&copy; 2026 WellBodyMind. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
