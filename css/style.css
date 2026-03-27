@@ -1602,6 +1602,7 @@ input, select, textarea {
 }
 /* About section image tuning */
 /* About section image refinement */
+/* About section image refinement */
 .about__image {
     display: flex;
     justify-content: center;
@@ -1612,12 +1613,15 @@ input, select, textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0;
 }
 
 .about__img {
-    width: 75%;
-    max-width: 280px;
+    width: 100%;
+    max-width: 260px;
+    max-height: 520px;
     height: auto;
     border-radius: 16px;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center top;
 }
