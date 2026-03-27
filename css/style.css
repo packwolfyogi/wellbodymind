@@ -1617,6 +1617,7 @@ input, select, textarea {
 }
 
 .about__img {
+   align-items: flex-start;
     width: 100%;
     max-width: 260px;
     max-height: 520px;
