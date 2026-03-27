@@ -1600,3 +1600,21 @@ input, select, textarea {
         max-width: 1320px;
     }
 }
+/* About section image tuning */
+.about__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__image-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.about__img {
+    width: 85%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 16px;
+}
