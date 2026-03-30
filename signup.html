@@ -1,0 +1,119 @@
+<section class="signup-section">
+  <div class="signup-container">
+    <h1>WellBodyMind Yoga Registration</h1>
+    <p>
+      Please complete this form before attending class. This includes your intake
+      information and liability waiver acknowledgment.
+    </p>
+
+    <form action="https://formspree.io/f/xykbwnpo" method="POST">
+      <input type="hidden" name="_subject" value="New WellBodyMind registration submission" />
+
+      <fieldset>
+        <legend>Participant Information</legend>
+
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="full_name" required />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="date_of_birth" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone_number" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email_address" required />
+
+        <label for="emergencyContact">Emergency Contact Name & Phone</label>
+        <input
+          type="text"
+          id="emergencyContact"
+          name="emergency_contact"
+          required
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Health & Intake Questionnaire</legend>
+
+        <label>1. Do you have any current injuries or physical limitations?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="injuries_limitations" value="Yes" required /> Yes</label>
+          <label><input type="radio" name="injuries_limitations" value="No" required /> No</label>
+        </div>
+
+        <label for="injuriesExplain">If yes, please explain:</label>
+        <textarea id="injuriesExplain" name="injuries_explanation" rows="3"></textarea>
+
+        <label>2. Do you have any chronic conditions (e.g., heart condition, high blood pressure, joint issues)?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="chronic_conditions" value="Yes" required /> Yes</label>
+          <label><input type="radio" name="chronic_conditions" value="No" required /> No</label>
+        </div>
+
+        <label for="conditionsExplain">If yes, please explain:</label>
+        <textarea id="conditionsExplain" name="conditions_explanation" rows="3"></textarea>
+
+        <label>3. Are you currently pregnant?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="pregnant" value="Yes" required /> Yes</label>
+          <label><input type="radio" name="pregnant" value="No" required /> No</label>
+        </div>
+
+        <label>4. Are you taking any medications that may affect your physical activity?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="medications_affect_activity" value="Yes" required /> Yes</label>
+          <label><input type="radio" name="medications_affect_activity" value="No" required /> No</label>
+        </div>
+
+        <label for="medicationsExplain">If yes, please explain:</label>
+        <textarea id="medicationsExplain" name="medications_explanation" rows="3"></textarea>
+
+        <label for="otherInfo">5. Is there anything else you would like your instructor to know?</label>
+        <textarea id="otherInfo" name="other_information" rows="4"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Acknowledgment & Waiver</legend>
+
+        <div class="waiver-text">
+          <p>
+            I understand that participation in yoga and wellness activities includes
+            physical movement and exertion. I acknowledge that these activities carry
+            inherent risks, including but not limited to muscle strain, injury, or
+            other physical harm. I affirm that I am voluntarily participating in these
+            activities and that I am in sufficient physical condition to do so.
+          </p>
+
+          <p>I agree to:</p>
+          <ul>
+            <li>Listen to my body and practice within my own limits</li>
+            <li>Modify or stop any movement that causes pain or discomfort</li>
+            <li>Inform the instructor of any changes in my health</li>
+          </ul>
+
+          <p>
+            I hereby release and discharge WellBodyMind Yoga, its instructor(s), and
+            the Dryden Community Center from any and all liability, claims, or demands
+            arising from participation in classes, including injury, loss, or damages.
+            I understand that instruction is not a substitute for medical advice,
+            diagnosis, or treatment.
+          </p>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox" name="waiver_agreement" required />
+          I have read and agree to the liability waiver above.
+        </label>
+
+        <label for="signature">Typed Signature</label>
+        <input type="text" id="signature" name="typed_signature" required />
+
+        <label for="signatureDate">Date</label>
+        <input type="date" id="signatureDate" name="signature_date" required />
+      </fieldset>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
+</section>
