@@ -21,7 +21,22 @@
         linear-gradient(rgba(250, 247, 242, 0.88), rgba(255, 255, 255, 0.94)),
         url("assets/images/hero-sm-group-yoga-on-mats.avif") center/cover no-repeat;
     }
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
 
+.nav__inner {
+  position: relative;
+  z-index: 1001;
+}
     .signup-page::before {
       content: "";
       position: absolute;
